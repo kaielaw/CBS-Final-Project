@@ -24,7 +24,7 @@ void frontPage(){
     cout << "| Menu:\t\t\t\t\t\t\t|\n";
     cout << "| 1. Play\t\t\t\t\t\t|\n";
     cout << "| 2. Instructions\t\t\t\t\t|\n";
-    cout << "| 3. shop\t\t\t\t\t\t|\n";
+    cout << "| 3. Shop\t\t\t\t\t\t|\n";
     cout << "| 4. Exit\t\t\t\t\t\t|\n";
     cout << " =======================================================\n";
     
@@ -60,7 +60,7 @@ void instructions(){
     cout << "| 1. At front page, choose play\t\t\t\t|\n";
     cout << "| 2. Choose level\t\t\t\t\t|\n";
     cout << "| 3. Answer math questions\t\t\t\t|\n";
-    cout << "| 4. If your answer is correct, the monster's HP will be decreased\t|\n";
+    cout << "| 4. Correct answer: monster's HP will be decreased\t|\n";
     cout << "|    Otherwise, your HP will be decreased\t\t|\n";
     cout << "| 5. You can buy potion to regain your HP\t\t|\n";
     cout << " =======================================================\n";
@@ -245,7 +245,7 @@ void intermediate(){
                 if (ans == num1-num2){
                     cout << "Correct answer\n";
                     monsterHealth -= 20;
-                    cout << "HP Monster\t:" << monsterHealth << endl;
+                    cout << "HP Monster\t: " << monsterHealth << endl;
                     cout << "HP Player\t: " << playerHealth << endl;
                 } else {
                     cout << "Wrong answer\n";
@@ -327,7 +327,7 @@ void advanced(){
                 if (ans == num1-num2){
                     cout << "Correct answer\n";
                     monsterHealth -= 20;
-                    cout << "HP Monster\t:" << monsterHealth << endl;
+                    cout << "HP Monster\t: " << monsterHealth << endl;
                     cout << "HP Player\t: " << playerHealth << endl;
                 } else {
                     cout << "Wrong answer\n";
@@ -402,6 +402,7 @@ void shop(){
             point -= 7;
             cout << "Points\t\t: " << point << endl;
             cout << "Player Health\t: " << playerHealth << endl;
+            this_thread::sleep_for(chrono::seconds(2));
             shop();
         }
         break;
@@ -416,6 +417,7 @@ void shop(){
             point -= 7;
             cout << "Points\t\t: " << point << endl;
             cout << "Player Health\t: " << playerHealth << endl;
+            this_thread::sleep_for(chrono::seconds(2));
             shop();
         }
         break;
@@ -430,6 +432,7 @@ void shop(){
             point -= 7;
             cout << "Points\t\t: " << point << endl;
             cout << "Player Health\t: " << playerHealth << endl;
+            this_thread::sleep_for(chrono::seconds(2));
             shop();
         }
         break;
